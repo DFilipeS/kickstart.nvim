@@ -744,6 +744,8 @@ do
     -- But for many setups, the LSP (`rust_analyzer`) will work just fine
     -- rust_analyzer = {},
 
+    dexter = {},
+
     stylua = {}, -- Used to format Lua code
 
     -- Special Lua Config, as recommended by neovim help docs
@@ -827,6 +829,7 @@ do
       -- You can specify filetypes to autoformat on save here:
       local enabled_filetypes = {
         lua = true,
+        elixir = true,
         -- python = true,
       }
       if enabled_filetypes[vim.bo[bufnr].filetype] then
